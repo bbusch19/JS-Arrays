@@ -236,9 +236,11 @@ for(var i = 0; i < num2; i++){
 function both(arr1, arr2) {
   var newArray = [];
   for (var i = 0; i < arr1.length; i++) {
-      arr2.push(arr1[i]);
+      newArray.push(arr1[i]);
     }
-  newArray = arr2;
+  for (var b = 0; b < arr2.length; b++) {
+    newArray.push(arr2[b]);
+  }
   return newArray;
 }
 
